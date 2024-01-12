@@ -1,10 +1,15 @@
 from setuptools import setup, find_packages
 
+with open('README.md', 'r', encoding='utf-8') as fh:
+    long_description = fh.read()
+
 setup(
     name="pilkommedia",
-    version="0.1.0",
+    version="0.1.1",
     description="Modul untuk keperluan perkuliahan Program Studi Pendidikan Komputer Universitas Lambung Mangkurat",
-    packages=find_packages(include=['statistika']),
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    packages=find_packages(include=["statistika"]),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
