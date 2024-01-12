@@ -3,3 +3,6 @@ build:
 
 clean:
 	@rm -rf build/ dist/ pilkommedia.egg-info/
+
+upload:
+	@python3 -m twine upload dist/*
