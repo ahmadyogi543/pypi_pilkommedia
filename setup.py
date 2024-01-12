@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setup(
     name="pilkommedia",
-    version="0.1.1",
+    version="0.1.2",
     description="Modul untuk keperluan perkuliahan Program Studi Pendidikan Komputer Universitas Lambung Mangkurat",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -23,5 +23,5 @@ setup(
     setup_requires=['pytest-runner'],
     tests_require=['pytest==4.4.1'],
     test_suite='tests',
-    data_files=['data/statistik_iwak_papuyu.csv'],
+    package_data={"statistika": ["data/*.csv"]},
 )

@@ -1,6 +1,8 @@
 from csv import reader
+import pkg_resources
 
-FILE_PATH = "data/statistik_iwak_papuyu.csv"
+CSV_FILE = pkg_resources.resource_filename(
+    __name__, 'data/statistik_iwak_papuyu.csv')
 
 
 def get_data(header=False):
@@ -27,7 +29,7 @@ def get_data(header=False):
     ]
     """
     csv = []
-    with open(FILE_PATH, mode='r', encoding='utf-8', newline='') as file:
+    with open(CSV_FILE, mode='r', encoding='utf-8', newline='') as file:
         csv_file = reader(file)
         for row in csv_file:
             if header:
