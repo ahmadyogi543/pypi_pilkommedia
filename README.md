@@ -1,4 +1,4 @@
-# Modul Statistika Pilkommedia
+# Modul PyPI Pilkommedia
 
 Modul ini berisikan data serta fungsi-fungsi yang digunakan untuk keperluan perkuliahan di Program Studi Pendidikan Komputer FKIP ULM Banjarmasin.
 
